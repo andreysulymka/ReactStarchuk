@@ -11,13 +11,21 @@ function App() {
     setCount(count + 1);
   };
 
+  const texts = [
+    "Push me",
+    "Click me",
+    "Push",
+    "Push!!!!!!!!!!!!!!!!!",
+    "Click me again",
+    "Press me",
+  ];
+
   return (
     <div className="App">
       <Counter count={count} />
-      <Button onClick={incrementCount} />
-      <Button onClick={incrementCount} />
-      <Button onClick={incrementCount} />
-      <Button onClick={incrementCount} />
+      {texts.map((text, index) => {
+        return <Button onClick={incrementCount} text={text} key={index} />;
+      })}
     </div>
   );
 }
