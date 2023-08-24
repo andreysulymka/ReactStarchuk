@@ -1,10 +1,16 @@
 .App {
   text-align: center;
 }
-.active {
+
+/* used by default with NavLink*/
+/*.active {
   color: lightyellow;
   text-decoration: none;
-}
+} */
+
+.activeLink {
+  color: lightyellow;
+  text-decoration: none;}
 
 a{
   color: lightblue;
