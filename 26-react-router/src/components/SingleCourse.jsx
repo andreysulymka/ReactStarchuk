@@ -1,6 +1,5 @@
 import { Link, useNavigate, useParams } from "react-router-dom";
 import courses from "../data/courses";
-import NotFound from "./NotFound";
 import { useEffect } from "react";
 
 const SingleCourse = () => {
@@ -17,7 +16,7 @@ const SingleCourse = () => {
     if (!course) {
       navigate("..", { relative: "path" });
     }
-  }, [course]);
+  }, [course, navigate]);
 
   return (
     <>
