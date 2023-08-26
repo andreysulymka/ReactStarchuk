@@ -27,7 +27,7 @@ const Courses = () => {
     if (!SORT_KEYS.includes(sortKey)) {
       navigate(".");
       setSortKey();
-      setSortedCourses([...courses])
+      setSortedCourses([...courses]);
     }
   }, [sortKey, navigate]);
 
